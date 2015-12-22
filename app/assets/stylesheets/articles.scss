@@ -1,0 +1,129 @@
+
+
+.article_top{
+  margin: 0 auto;
+  width: 80%;
+  background-color: #D32F2F;
+  color: #212121;
+  height: 200px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.article_top h1{
+  font-size: 5em;
+  line-height: 200px;
+  font-family: futura;
+}
+
+.wrapper{
+  margin: 0 auto;
+  min-width: 40%;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;  
+  overflow: hidden;
+  transition: 1s ease all;
+}
+
+.flex{
+  flex: 1 auto;
+  background-color: white;
+  color: #333;
+  min-width: 250px;
+  max-width: 300px;
+  width: 300px;
+  margin: 10px;
+  overflow: hidden;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+   transition: 2s ease all;
+}
+
+.flex:hover{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+   transition: 0.5s ease all;
+}
+
+.flex a img{
+  height: auto;
+  max-height: 275px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+    z-index: 0;
+
+}
+
+.flex > p{
+  padding: 10px;
+}
+
+
+.search{
+  margin: 0 auto;
+  background-color: white;
+  width: 60%;
+  color: #212121;
+  height: 80px;
+  text-align: center;
+  margin-top: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+.hide_search{
+  float: right;
+  text-decoration: none;
+  margin: 6px;
+  color: #212121;
+  font-size: 1.4em;
+}
+
+
+.search input{
+  margin: 20px 45px;
+  width: 200px;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px  #D32F2F;
+  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%,  #D32F2F 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #D32F2F;
+  &:focus, &:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+   
+  }
+}
+
+  input:focus::-webkit-input-placeholder{
+      color:  #D32F2F;
+      font-size: 11px;
+      transform: translateY(-30px);
+      visibility: visible !important;
+      transition: 0.2s ease all;
+    }
+
+
+.search .buttoner {
+  transform: translateY(8px);
+  border: none;
+  background: #D32F2F;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px;
+  width: 200px;
+  color: white;
+  margin-left: 25px;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+  &:hover { 
+    transform: translateY(-3px);
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);
+  }
+  }
+

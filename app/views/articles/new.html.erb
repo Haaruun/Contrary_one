@@ -1,0 +1,47 @@
+<%= form_for(@article) do |f| %>
+
+<p>
+<%= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose a category"} %>
+</p>
+
+<p>
+<%= f.label :author %>
+<%= f.text_field :author %>
+</p>
+
+<p>
+<%= f.label :title %>
+<%= f.text_field :title %>
+</p>
+
+<p>
+<%= f.label :source %>
+<%= f.text_field :source %>
+</p>
+
+<p>
+<%= f.label :summary %>
+<%= f.text_field :summary %>
+</p>
+
+<p>
+<%= f.label :content %>
+<%= f.text_field :content %>
+</p>
+
+<p>
+<%= f.label :image %>
+<%= f.file_field :image %>
+</p>
+
+<p>
+<%= f.label :thumbnail %>
+<%= f.file_field :thumbnail %>
+</p>
+
+
+<p>
+	<%= f.submit %>
+</p>
+
+<% end %>

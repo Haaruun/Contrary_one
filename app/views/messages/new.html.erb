@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="contacth1">Contact Us</h1>
+<div class="contact">
+<%= form_for @message, url: contact_path do |message_form| %>
+  <fieldset>
+    <div class="field">
+      <%= message_form.text_field :name, placeholder: "Name" %>
+    </div>
+    
+    <div class="field">
+      <%= message_form.email_field :email, placeholder: "Email"%>
+    </div>
+    
+    <div class="field">
+      <%= message_form.text_area :content, placeholder: "Message", :class => 'textarea'%>
+    </div>
+  </fieldset>
+  
+  <fieldset>
+    <div class="field">
+      <%= message_form.submit "Send", :class => "buttoner" %>
+    </div>
+  </fieldset>
+<% end %>
+</div>

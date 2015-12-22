@@ -1,0 +1,62 @@
+<style>
+	.head{
+    height: 500px;
+    width: 100%;
+    background-image: url(<%= @article.image %>);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -100;
+    overflow: hidden;
+}
+
+</style>
+
+
+
+
+
+    <h2 class="blos"><%= @article.title %></h2>
+    <div class="head">
+    </div>
+    
+    <article class="area">
+       <div class="headings">
+           <span class="date"> <%= @article.created_at.strftime("%B %d %Y") %></span>
+           <span class="source">Sources</span>
+           <span class="name"><%= @article.author %></span>
+       </div>
+        <p><%= @article.content %></p>
+        
+<div class="social">
+<%= social_share_button_tag(@article.title) %>  
+</div>        
+     
+
+        </article>
+        
+        
+        <dialog id="dialog">
+            <span class="modalClose">✕</span>
+            <h4>Sources:</h4>
+<p><%= @article.source%></p>
+</dialog>
+
+<h2>Comments</h2>
+<ol>
+	<% @article.comments.each do |comment| %>
+	<li>
+		<h4> <%= comment.name%> </h4>
+		<p> <%= comment.body %> </p>
+	</li>
+	<% end %>
+</ol>
+<%= form_for([@article, @article.comments.build ]) do |f| %>
+
+<p> <%= f.text_field :name, placeholder: "Name" %> </p>
+
+<p> <%= f.text_area :body, rows: 8, cols: 50 %> </p>
+
+<p> <%= f.submit %> </p>
+
+<% end %>	
+

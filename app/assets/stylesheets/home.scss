@@ -1,0 +1,143 @@
+.essay{
+    flex: 1;
+    width: 400px;
+    min-width: 450px;
+    background-image: url('https://images.unsplash.com/photo-1429051781835-9f2c0a9df6e4?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1300');
+    height: 100%;
+    -webkit-filter: grayscale(100%);
+    transition: 0.5s ease all;
+    animation: up 1s; 
+    position: relative;
+        background-size: cover;
+
+}
+
+.essay h3{
+    margin: 0 auto;
+    width: 35%;
+    color: #B71C1C;
+    font-size: 2.6em;
+    background: black;
+    position: relative;
+    top: 200px;
+    text-align: center;
+}
+
+.essay:hover{
+-webkit-filter: grayscale(0%);
+transition: 0.5s ease all; 
+}
+
+
+.economics{
+    flex: 1;
+    width: 400px;
+        min-width: 450px;
+    background-image: url('https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1275');
+    height: 100%;
+    -webkit-filter: grayscale(100%);
+    transition: 0.5s ease all;
+        animation: upp 1s; 
+    position: relative;
+        background-size: cover;
+
+
+}
+
+.economics h3{
+    margin: 0 auto;
+    width: 55%;
+    color: #B71C1C;
+    font-size: 2.6em;
+    background: black;
+    position: relative;
+    top: 200px;
+    text-align: center;
+}
+
+.economics:hover{
+-webkit-filter: grayscale(0%);
+transition: 0.5s ease all; 
+}
+
+
+.politics{
+   flex: 1;
+    width: 400px;
+    min-width: 450px;
+    background-image: url('https://images.unsplash.com/13/unsplash_5243a2eb2bc02_1.JPG?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1300');
+    height: 100%;
+    -webkit-filter: grayscale(100%);
+    transition: 0.5s ease all;
+background-position: 30% 20%; 
+    background-size: cover;
+       animation: uppp 1s; 
+    position: relative;
+}
+
+.politics h3{
+    margin: 0 auto;
+    width: 55%;
+    color: #B71C1C;
+    font-size: 2.6em;
+    background: black;
+    position: relative;
+    top: 200px;
+    text-align: center;
+}
+
+.politics:hover{
+-webkit-filter: grayscale(0%);
+transition: 0.5s ease all; 
+}
+
+.multimedia{
+     flex: 1;
+    width: 500px;
+    min-width: 400px;
+    background-image: url('https://images.unsplash.com/photo-1429051883746-afd9d56fbdaf?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1300');
+    height: 100%;
+    -webkit-filter: grayscale(100%);
+    transition: 0.5s ease all;
+background-position: 30% 20%; 
+    background-size: cover;
+       animation: ups 1s; 
+    position: relative;   
+}
+
+.multimedia h3{
+    margin: 0 auto;
+    width: 55%;
+    color: #B71C1C;
+    font-size: 2.6em;
+    background: black;
+    position: relative;
+    top: 200px;
+    text-align: center;
+}
+
+.multimedia:hover{
+-webkit-filter: grayscale(0%);
+transition: 0.5s ease all; 
+}
+
+@-webkit-keyframes up {
+    from {top: 1500px;}
+    to {top: 0px;}
+}
+@-webkit-keyframes upp {
+    from {top: 3500px;}
+    to {top: 0px;}
+}
+@-webkit-keyframes uppp {
+    from {top: 5500px;}
+    to {top: 0px;}
+}
+@-webkit-keyframes ups {
+    from {top: 7500px;}
+    to {top: 0px;}
+}
+@-webkit-keyframes left {
+    from {left: -500px;}
+    to {left: 0px;}
+}
