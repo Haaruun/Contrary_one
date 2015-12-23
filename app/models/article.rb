@@ -4,10 +4,6 @@ class Article < ActiveRecord::Base
 
 	has_many :comments
 
-	mount_uploader :image, ImageUploader
-
-	mount_uploader :thumbnail, ThumbnailUploader
-
 
 	extend FriendlyId
     friendly_id :title, use: :slugged

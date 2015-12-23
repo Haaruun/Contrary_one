@@ -28,7 +28,6 @@
 <div id="masonry-container" class="transitions-enabled infinite-scroll clearfix">
 <% @article.each do |article| %>
 <div class="box col3">
-	<%= link_to image_tag(article.thumbnail), article%>
 <p><%= article.title %></p>
 <p>	<%= article.summary %></p>
 <p><%= article.created_at.strftime("%D") %></p>
