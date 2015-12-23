@@ -291,7 +291,6 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise
   fog
-  fog-aws
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.0)
   jquery-rails

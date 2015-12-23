@@ -16,7 +16,6 @@ gem 'carrierwave'
 
 gem "fog", require: 'fog/aws', group: :production
 
-gem "fog-aws", group: :development
 
 gem "mini_magick"
 
