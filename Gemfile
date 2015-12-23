@@ -13,14 +13,6 @@ gem 'rails_12factor', group: :production
 gem 'pg', group: :production
 
 
-group :development, :test do
-  gem 'byebug'
-
-  gem 'web-console', '~> 2.0'
-
-  gem 'spring'
-end
-
 gem 'masonry-rails'
 
 gem 'carrierwave'
@@ -38,3 +30,14 @@ gem 'ransack'
 gem 'devise'
 
 gem 'fog', require: 'fog/aws'
+
+gem "mini_magick"
+
+
+group :development, :test do
+  gem 'byebug'
+
+  gem 'web-console', '~> 2.0'
+
+  gem 'spring'
+end
