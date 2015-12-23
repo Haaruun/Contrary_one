@@ -12,7 +12,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
 
-
 gem 'masonry-rails'
 
 gem 'friendly_id', '~> 5.1.0'
