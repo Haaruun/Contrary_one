@@ -1,0 +1,184 @@
+
+.new_form{
+  margin: 0 auto;
+  width: 80%;
+  background-color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+   padding-bottom: 25px;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+
+}
+
+
+.new_form h1{
+  background-color: #B71C1C;
+  color: #212121;
+  font-size: 5em;
+  width: 80%;
+  text-align: center;
+  height: 200px;
+  line-height: 200px;
+  margin: 0 auto;
+}
+
+.textarea_new{
+  margin: 40px 25px;
+  width: 80%;
+  height: 40px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #B71C1C;
+  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, #B71C1C 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #B71C1C;
+}
+
+.textarea_new:focus::-webkit-input-placeholder{
+      color: #B71C1C;
+      font-size: 11px;
+      transform: translateY(-10px);
+      visibility: visible !important;
+      transition: 0.2s ease all;
+    }
+
+
+    .textarea_new:focus, input:focus{
+    outline: 0;
+}
+
+
+.new_form .new_submit{
+  border: none;
+  background: #B71C1C;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px;
+  width: 200px;
+  color: white;
+  margin-left: 25px;
+  margin-top: 25px;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+ &:hover { 
+    transform: translateY(-3px);
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);
+  }
+}
+
+
+
+.new_form input{
+  margin: 40px 25px;
+  width: 200px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #B71C1C;
+  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, #B71C1C 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: darken(#B71C1C, 20%);
+  &:focus, &:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+   
+  }
+}
+
+    input:focus::-webkit-input-placeholder{
+      color: #B71C1C;
+      font-size: 11px;
+      transform: translateY(-30px);
+      visibility: visible !important;
+      transition: 0.2s ease all;
+    }
+
+
+
+   .new_form .textarea_main{
+  margin: 40px 25px;
+    font-size: 1.5em;
+  width: 80%;
+  height: 350px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #B71C1C;
+  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, #B71C1C 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #B71C1C;
+}
+
+.new_form .textarea_main:focus::-webkit-input-placeholder{
+      color: #B71C1C;
+      transform: translateY(-10px);
+      visibility: visible !important;
+      transition: 0.2s ease all;
+    }
+
+
+    .new_form .textarea_main:focus, input:focus{
+    outline: 0;
+}
+
+
+$color-black: "0,0,0";
+$select-background-color: transparent;
+$select-border-color: unquote("rgba(#{$color-black}, 0.12)") !default;
+$select-font-size: 16px;
+$select-color: unquote("rgba(#{$color-black}, 0.26)") !default;
+$select-padding: 4px;
+
+/* ==========  Select Field ========== */
+
+/* Style Select Field */
+select {
+  font-family: inherit;
+  background-color: transparent;
+  width: 20%;
+  padding: $select-padding 0;
+  font-size: $select-font-size;
+  color: #B71C1C;
+  border: none;
+  border-bottom: 1px solid $select-border-color;
+}
+
+/* Remove focus */
+select:focus {
+  outline: none}
+
+/* Hide label */
+.mdl-selectfield label {display: none;}
+/* Use custom arrow */
+.mdl-selectfield select {appearance: none}
+.mdl-selectfield {
+  font-family: 'Roboto','Helvetica','Arial',sans-serif;
+  position: relative;
+    &:after {
+        position: absolute;
+        top: 0.75em;
+        right: 0.5em;
+        /* Styling the down arrow */
+        width: 0;
+        height: 0;
+        padding: 0;
+        content: '';
+        border-left: .25em solid transparent;
+        border-right: .25em solid transparent;
+        border-top: .375em solid $select-border-color;
+        pointer-events: none;
+    }
+}
+
+
+

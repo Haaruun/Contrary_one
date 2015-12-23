@@ -141,3 +141,21 @@ transition: 0.5s ease all;
     from {left: -500px;}
     to {left: 0px;}
 }
+
+.essay h3 img{
+ height: 50px;
+ width: 40px;
+
+}
+
+.economics h3 img{
+ height: 55px;
+ width: 60px;
+}
+
+.politics h3 img{
+ height: 60px;
+ width: 50px;
+ display: block;
+ margin: 0 auto;
+}

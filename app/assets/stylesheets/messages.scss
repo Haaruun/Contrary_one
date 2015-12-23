@@ -77,10 +77,10 @@ h1, input::-webkit-input-placeholder, button {
 
 
 
-.textarea{
+.textarea_contact{
   margin: 40px 25px;
   width: 600px;
-  height: 200px;
+height: 150px;
   display: block;
   border: none;
   padding: 10px 0;
@@ -93,17 +93,16 @@ h1, input::-webkit-input-placeholder, button {
   color: darken(#B71C1C, 20%);
 }
 
-.textarea:focus::-webkit-input-placeholder{
+.textarea_contact:focus::-webkit-input-placeholder{
       color: #B71C1C;
       font-size: 11px;
       transform: translateY(-30px);
       visibility: visible !important;
       transition: 0.2s ease all;
-      border: 2px solid #B71C1C;
     }
 
 
-    .textarea:focus, input:focus{
+    .textarea_contact:focus, input:focus{
     outline: 0;
 }
 
@@ -127,22 +126,23 @@ h1, input::-webkit-input-placeholder, button {
 
 
 .contact {
+ padding: 20px;
  margin: 5px auto;
  background-color: white;
- width: 50%;
+ width: 700px;
  box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
 }
 
 
 .contacth1{
    font-size: 5em;
-  line-height: 200px;
-  font-family: futura;
+   padding: 20px;
+  line-height: 100px;
   margin: 0 auto;
-  width: 80%;
+  width: 700px;
   background-color: #D32F2F;
   color: #212121;
-  height: 200px;
+  height: 100px;
   text-align: center;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }

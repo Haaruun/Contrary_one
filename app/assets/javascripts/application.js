@@ -11,13 +11,6 @@
 // about supported directives.
 //
 //= require jquery
-//= require masonry/masonry.min
-//= require masonry/jquery.event-drag
-//= require masonry/jquery.imagesloaded.min
-//= require masonry/jquery.infinitescroll.min
-//= require masonry/modernizr-transitions
-//= require masonry/box-maker
-//= require masonry/jquery.loremimages.min
 //= require social-share-button
 //= require sweet-alert
 //= require sweet-alert-confirm
@@ -39,24 +32,6 @@ var sweetAlertConfirmConfig = {
 
 
 
-$(function(){
-  $('#masonry-container').masonry({
-    itemSelector: '.box',
-    columnWidth: 200,
-    isAnimated: !Modernizr.csstransitions,
-    isFitWidth: true
-  });
-
-});
 
 
 
-$(function(){
-
-  $('#masonry-container').masonry({
-    itemSelector: '.box',
-    columnWidth: 50,
-    gutterWidth: 20
-  });
-
-});

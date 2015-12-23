@@ -11,48 +11,14 @@
  * file per style scope.
  *
  *= require_tree .
- *= require 'masonry/basic'
- *= require 'masonry/centered'
- *= require 'masonry/fluid'
- *= require 'masonry/gutters'
- *= require 'masonry/infinitescroll'
- *= require 'masonry/right-to-left'
- *= require 'masonry/transitions'
  *= require sweet-alert
  *= require_self
  *= require social-share-button
  */
 
 
-
-@import url("https://fonts.googleapis.com/css?family=PT+Sans");
 @import "social-share-button";
-
-
-#masonry-container {
-  padding: 5px;
-  margin-bottom: 20px;
-  margin-left: 70px;
-  border-radius: 5px;
-  clear: both;
-  -webkit-border-radius: 0px;
-     -moz-border-radius: 0px;
-          border-radius: 0px;      
-}
-
-.box{
-    background-color: white;
-      -webkit-border-radius: 0px;
-     -moz-border-radius: 0px;
-          border-radius: 0px;  
-    padding: 0px;
-        box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
-}
-.centered { margin: 0 auto; }
-
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
 
 .social-share-button-facebook {
@@ -65,7 +31,7 @@
 *{
     margin: 0;
     padding: 0;
-font-family: 'PT Sans';
+font-family: 'Roboto', sans-serif;
 }
 
 ::selection {
@@ -84,25 +50,24 @@ p{
 .side{
     text-align: center;
     height: 100vh;
-    width: 5%;
-    min-width: 60px;
+    width: 65;
     top: 0;
     left: 0;
     position: fixed;
     float: left;
     background-color: #212121;
     box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
-    overflow: hidden;
     z-index: 999;
     animation: left 0.5s; 
     transition: 0.5s ease all;
+        top: 91%;
 }
 
 .side_icon img{
     position: relative;
     transform: scale(0.35, 0.35);
-    width: 55px;
-    height: 55px;
+    width: 65px;
+    height: 65px;
 }
 
 .side_icon:hover{
@@ -119,9 +84,9 @@ p{
     transform: rotate(-90deg);
     color: white;
     text-align: center;
-    width: 75px;
+    width: 65px;
     white-space: nowrap;
-    margin-top: 240px;
+    margin-top: 280px;
     letter-spacing: 2px
 }
 
@@ -147,7 +112,7 @@ p{
 
 section{
     perspective: 1000px;
-    height: 75px;
+    height: 65px;
     background-color: #ecf0f1;
     width: 100%;
     overflow: hidden;
@@ -158,7 +123,7 @@ section{
 section div{
     float: right;
     width: 50%;
-    height: 75px;
+    height: 65px;
     transform: rotateX(80deg);
     transform-origin: 90% 90%;
         transition: 0.5s ease all;
@@ -209,7 +174,32 @@ section div:hover{
 }
 
 .movedown{
-    top: 91%;
+    top: 0%;
     transition: 0.5s ease all;
 }
- 
+
+.subnav {
+color: white;
+
+
+}
+
+.subnav p a{
+    background-color: #212121;
+    width: 25%;
+    height: 50px;
+    float: left;
+    text-align: center;
+    color: #B71C1C;
+    font-size: 1.5em;
+    text-decoration: none;
+    line-height: 50px;
+    transition: 0.8s ease all;
+}
+
+.subnav p a:hover{
+    background-color: #B71C1C;
+    color: #212121;
+    transition: 0.8s ease all;
+}
+

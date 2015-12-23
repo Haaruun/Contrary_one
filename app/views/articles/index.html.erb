@@ -1,10 +1,10 @@
 <% if current_admin %>
-<%= link_to "New", new_article_path %>
+<p class="add_new"><%= link_to "+", new_article_path %></p>
 <% end %>
 
 
 <div class="article_top">
-	<h1>Articles</h1>
+	<h1>CC: Articles</h1>
 </div>
 <%= search_form_for @search do |f| %>
 
@@ -24,13 +24,60 @@
 
 
 
-
-<div id="masonry-container" class="transitions-enabled infinite-scroll clearfix">
+<div class="article_wrap">
 <% @article.each do |article| %>
-<div class="box col3">
-<p><%= link_to article.title, article %></p>
-<p>	<%= article.summary %></p>
-<p><%= article.created_at.strftime("%D") %></p>
+
+<style>	
+.article_box::before{
+  content: '<%= article.created_at.strftime("%D") %>';
+    position: absolute;
+    top: -15%;
+    left: 100%;
+    margin-left: -50px;
+   background-color: #D32F2F;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  font-size: 0.7em;
+  line-height: 60px;
+}
+
+@media screen and (max-width: 1000px) {
+    .article_top h1{
+  font-size: 3em;
+  line-height: 100px;
+}
+
+.add_new{
+  top: 5%;
+  left: 85%;
+}
+
+.article_top{
+  height: 100px;
+}
+
+.search{
+	height: 160px;
+}
+}
+
+@media screen and (max-width: 580px) {
+  
+
+.search{
+	display: none;
+}
+}
+
+</style>
+
+<div class="article_box">
+<h3 class ="title"><%= link_to article.title, article %></h3>
+<p class="summary">	<%= article.summary %></p>
+
 <p><% if current_admin %>
 		<%= link_to "Edit", edit_article_path(article) %>
 

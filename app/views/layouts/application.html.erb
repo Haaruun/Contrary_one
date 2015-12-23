@@ -10,17 +10,25 @@
 	 <div class="side">
 		<p class= "button">☰</p>
         <p class ="side_icon"><%= link_to image_tag("home.png"), {:action => 'index', :controller => 'home'}%></p>
-        <p class ="side_icon"><%= link_to image_tag("articles.png"), {:action => 'index', :controller => 'articles'}%></p>
+        <p class ="side_icon"><%= link_to image_tag("articles.png"), {:action => 'index', :controller => 'articles'}%>
+        </p>
         <p class ="side_icon"><%= link_to image_tag("contact.png"), {:action => 'new', :controller => 'messages'}%></p>
         <p class ="side_icon"><%= link_to image_tag("about.png"), {:action => 'index', :controller => 'about'}%></p>
         <p class="copy">© Contrary.io| <span class="color"> Haaruun Dhubat</span></p>
 		
     </div>
-	
+            
+            
 	
 <div class="main">
 <%= yield %>
 </div>
-
+  <% Category.all.each do |category| %>
+              <div class="subnav">
+                <p>
+                <%=link_to category.name, articles_path(category: category.name) %>
+                </p>
+              </div>
+              <% end %>
 </body>
 </html>

@@ -1,37 +1,42 @@
-<%= form_for(@article) do |f| %>
+<div class="new_form">
+	<h1>New Article</h1>
 
+<%= form_for(@article) do |f| %>
+<br>
 <p>
 <%= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose a category"} %>
 </p>
-
 <p>
-<%= f.label :author %>
-<%= f.text_field :author %>
+
+<%= f.text_field :author, :placeholder => "Author" %>
 </p>
 
 <p>
-<%= f.label :title %>
-<%= f.text_field :title %>
+<%= f.text_field :title, :placeholder => "Title"  %>
+</p>
+
+<br>
+<br>
+
+<p>
+<%= f.text_area :source, :class => 'textarea_new', :placeholder => "Sources"  %>
 </p>
 
 <p>
-<%= f.label :source %>
-<%= f.text_field :source %>
+<%= f.text_area :summary,  :class => 'textarea_new', :placeholder => "Summary" %>
 </p>
 
 <p>
-<%= f.label :summary %>
-<%= f.text_field :summary %>
-</p>
 
-<p>
-<%= f.label :content %>
-<%= f.text_field :content %>
+<br>
+<%= f.text_area :content, :class => "textarea_main", :placeholder => "Write your post here" %>
 </p>
 
 
 <p>
-	<%= f.submit %>
+	<%= f.submit :class => "new_submit" %>
 </p>
 
 <% end %>
+
+</div>

@@ -1,21 +1,5 @@
 $(function(){
-$('.control').click( function(){
-  $('body').addClass('mode-search');
-  $('.input-search').focus();
-  $('.btn').text('');
-  $('.side').addClass('hide');
-  $('.main').addClass('full');
-  $('img').css('display', 'none');
-});
 
-$('.icon-close').click( function(){
-  $('body').removeClass('mode-search');
-  $('.btn').text('☌');
-  $('.side').removeClass('hide');
-  $('.main').removeClass('full');
-    $('img').css('display', 'block');
-
-});
 
 $('.button').click(function() {
   var clicks = $(this).data('clicks');
@@ -40,7 +24,9 @@ $('.red').each(function(i){
 });
 
 
-
+$('.hide_search').click(function(){
+  $('.search').toggleClass('bye');
+});
 
 
 });
