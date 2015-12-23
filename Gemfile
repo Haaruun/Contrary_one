@@ -14,7 +14,7 @@ gem 'pg', group: :production
 
 gem 'carrierwave'
 
-gem "fog-aws"
+gem 'fog', require: 'fog/aws'
 
 gem "mini_magick"
 
