@@ -28,7 +28,7 @@
 <div id="masonry-container" class="transitions-enabled infinite-scroll clearfix">
 <% @article.each do |article| %>
 <div class="box col3">
-<p><%= article.title %></p>
+<p><%= link_to article.title, article %></p>
 <p>	<%= article.summary %></p>
 <p><%= article.created_at.strftime("%D") %></p>
 <p><% if current_admin %>
