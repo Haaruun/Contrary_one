@@ -16,24 +16,8 @@
         <p class="copy">© Contrary.io| <span class="color"> Haaruun Dhubat</span></p>
 		
     </div>
-	<section>
-	<% Category.all.each do |category| %>
-		
-<div><%= image_tag('essay.png') %>
-	<p>Essays</p>
-</div>
-<div><%= image_tag('poli.png') %>
-	<p>Politics</p>
-</div>
-<div><%= image_tag('econ.png') %>
-<p>Economics</p>
-</div>
-
-		
-
-	<% end %>
-</section>
-
+	
+	
 <div class="main">
 <%= yield %>
 </div>

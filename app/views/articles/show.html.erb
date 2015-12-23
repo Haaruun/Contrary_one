@@ -1,8 +1,15 @@
 
+<section class="bb">
+  <div class="red"><%= link_to ">", @article.next %>
 
+  <p>Next</p>
+</div>
 
-<%= link_to "Next Post", @article.next %>
-<%= link_to "Prev Post", @article.prev %>
+<div class="red"><%= link_to "<", @article.prev %>
+  <p>Previous</p>
+</div>
+</section>
+
 
     <h2 class="blos"><%= @article.title %></h2>
     <div class="head">

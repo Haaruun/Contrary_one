@@ -24,25 +24,23 @@ $('.button').click(function() {
        setTimeout(function(){
       	 $('section').slideToggle('slow');
       }, 900);
-$('section div').each(function(i){
+$('.red').each(function(i){
 	setTimeout(function(){
-    $('div').eq(i).toggleClass('add');
+    $('.red').eq(i).toggleClass('add');
         }, 150 * (i + 1));
 });
   } else {
      $('section').slideToggle('slow');  
-	$('section div').each(function(i){
+	$('.red').each(function(i){
 	setTimeout(function(){
-    $('div').eq(i).toggleClass('add');
+    $('.red').eq(i).toggleClass('add');
         }, 450 * (i + 1));
 });  }
   $(this).data("clicks", !clicks);
 });
 
 
-$('.hide_search').click(function(){
-  $('.search').slideUp();
-});
+
 
 
 });
