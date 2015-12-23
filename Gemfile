@@ -37,4 +37,4 @@ gem 'ransack'
 
 gem 'devise'
 
-gem "fog-aws"
+gem 'fog', require: 'fog/aws'
