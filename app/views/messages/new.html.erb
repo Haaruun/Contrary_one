@@ -1,5 +1,20 @@
-<p id="notice"><%= notice %></p>
+<style>
+  @media screen and (max-width: 1000px) {
+    .textarea_contact{
+  width: 450px;
+height: 150px;
+}
+.contacth1{
+     font-size: 3em;
+}
+  @media screen and (max-width: 780px) {
+    .textarea_contact{
+  width: 200px;
+height: 150px;
+}
 
+}
+</style>
 <h1 class="contacth1">Contact Us</h1>
 <div class="contact">
 <%= form_for @message, url: contact_path do |message_form| %>

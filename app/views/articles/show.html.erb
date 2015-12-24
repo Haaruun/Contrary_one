@@ -1,13 +1,25 @@
 
 <style>
   .head_show{
-     height: 400px;
-    background-color: tomato;
+     height: 100vh;
     width: 100%;
-    /*background-image: url(<%= @article.image.url(:large)%>);*/
-
-
+    background-size: cover;
+    background-image: url(<%= @article.image.url(:large)%>);
+  background-attachment: fixed;
   }
+  .head_show::after {
+  content: "";
+  background-color: black;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 100; 
+  width: 100%;
+  height: 100%;  
+}
 </style>
 
 <section class="bb">
@@ -31,7 +43,6 @@
            <span class="name"><%= @article.author %></span>
        </div>
         <p><%= @article.content %>
-            <%= image_tag @article.image.url(:large)%>
         </p>
         
 <div class="social">

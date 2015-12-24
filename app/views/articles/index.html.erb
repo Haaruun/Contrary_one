@@ -4,7 +4,7 @@
 
 
 <div class="article_top">
-	<h1>CC: Articles</h1>
+	<h1>Articles</h1>
 </div>
 <%= search_form_for @search do |f| %>
 
@@ -32,7 +32,7 @@
   content: '<%= article.created_at.strftime("%D") %>';
     position: absolute;
     display: block;
-    margin-left: 260px;
+    margin-left: 20px;
     margin-top: -25px;
     width: 50px;
     height: 50px;
@@ -40,7 +40,7 @@
     font-size: 0.6em;
     text-align: center;
     color: white;
-    background-color: #212121;
+    background-color: #D32F2F;
     border-radius: 50%;
 }
 
@@ -79,8 +79,9 @@
 </style>
 
 <div class="article_box">
+  <%= image_tag article.image.url(:large)%>
 <h3 class ="title"><%= link_to article.title, article %></h3>
-<p class="summary">	<%= article.summary %></p>
+<p class="summary">	<%=h truncate(article.summary, :length => 30) %></p>
 
 <p><% if current_admin %>
 		<%= link_to "Edit", edit_article_path(article) %>
