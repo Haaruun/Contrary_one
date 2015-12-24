@@ -1,11 +1,18 @@
 <div class="new_form">
 	<h1>New Article</h1>
 
-<%= form_for(@article) do |f| %>
+<%= form_for(@article, :html => { multipart: true }) do |f| %>
 <br>
 <p>
 <%= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose a category"} %>
 </p>
+
+<p>
+
+<%= f.file_field :image, :placeholder => "Image" %>
+</p>
+
+
 <p>
 
 <%= f.text_field :author, :placeholder => "Author" %>

@@ -26,6 +26,8 @@ gem 'ransack'
 
 gem 'devise'
 
+gem "paperclip", "~> 4.3"
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'

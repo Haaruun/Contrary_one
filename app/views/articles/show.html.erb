@@ -1,4 +1,15 @@
 
+<style>
+  .head_show{
+     height: 500px;
+    background-size: cover;
+    width: 100%;
+    background-image: url(<%= @article.image.url(:large)%>);
+
+
+  }
+</style>
+
 <section class="bb">
   <div class="red"><%= link_to "Next >", @article.next %>
 
