@@ -1,10 +1,10 @@
 
 <style>
   .head_show{
-     height: 500px;
-    background-size: cover;
+     height: 400px;
+    background-color: tomato;
     width: 100%;
-    background-image: url(<%= @article.image.url(:large)%>);
+    /*background-image: url(<%= @article.image.url(:large)%>);*/
 
 
   }
@@ -30,7 +30,9 @@
            <span class="source">Sources</span>
            <span class="name"><%= @article.author %></span>
        </div>
-        <p><%= @article.content %></p>
+        <p><%= @article.content %>
+            <%= image_tag @article.image.url(:large)%>
+        </p>
         
 <div class="social">
 <%= social_share_button_tag(@article.title) %>  
