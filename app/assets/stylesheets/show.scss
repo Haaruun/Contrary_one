@@ -298,3 +298,23 @@ dialog::backdrop{
     box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);
   }
 }
+
+.comments .comment_display{
+  width: 95%;
+  background-color: white;
+  color: #212121;
+  height: auto;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+
+}
+
+.comments form{
+  background-color: white;
+  padding: 10px;
+      box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+
+
+}

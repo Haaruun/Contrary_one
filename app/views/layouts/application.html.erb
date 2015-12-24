@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Contraryio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -23,12 +24,14 @@
 <div class="main">
 <%= yield %>
 </div>
+  <div class="subnav">
   <% Category.all.each do |category| %>
-              <div class="subnav">
+            
                 <p>
                 <%=link_to category.name, articles_path(category: category.name) %>
                 </p>
-              </div>
+             
               <% end %>
+               </div>
 </body>
 </html>

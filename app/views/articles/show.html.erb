@@ -1,12 +1,10 @@
 
 <section class="bb">
-  <div class="red"><%= link_to ">", @article.next %>
+  <div class="red"><%= link_to "Next >", @article.next %>
 
-  <p>Next</p>
 </div>
 
-<div class="red"><%= link_to "<", @article.prev %>
-  <p>Previous</p>
+<div class="red"><%= link_to "< Previous", @article.prev %>
 </div>
 </section>
 
@@ -41,16 +39,22 @@
 
 
 <div class="comments">
+
   <h2>Comments</h2>
 
 <ol>
   <% @article.comments.each do |comment| %>
   <li>
+    <div class="comment_display">
     <h4> <%= comment.name%> </h4>
     <p> <%= comment.body %> </p>
+    </div>
   </li>
   <% end %>
 </ol>
+
+
+
 <%= form_for([@article, @article.comments.build ]) do |f| %>
 
 <p> <%= f.text_field :name, placeholder: "Name" %> </p>
