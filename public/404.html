@@ -19,6 +19,9 @@
     color: white;
   }
   h1{
+    padding: 10px;
+    transition: 2s ease all;
+    animation: fade 2s;
     background-color: #e74c3c;
     margin: 0 auto;
     margin-top: 10%;
@@ -33,12 +36,16 @@
 
   }
     h4{
+      padding: 10px;
+    transition: 2s ease all;
+    animation: fade 2s;
+    animation-delay: 1s;
     background-color: #e74c3c;
     margin: 0 auto;
     width: 35%;
     text-align: center;
     margin-top: 5%;
-    color: black;
+    color: white;
     overflow: hidden;
     font-size: 3em;
       box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -46,6 +53,13 @@
 
 
   }
+
+  @-webkit-keyframes fade {
+  0%   { transform: scale(1, 1); }
+  25%   { transform: scale(1.5, 1.5); }
+  50%   { transform: scale(1, 1);  }
+  75%   { transform: scale(1.5, 1.5);  }
+  100% { transform: scale(1, 1); }
 </style>
 <body>
   <h1>404</h1>
