@@ -32,7 +32,7 @@
 </section>
 
 
-    <h2 class="blos"><%= @article.title %></h2>
+    <h2 class="blos"></h2>
     <div class="head_show">
     </div>
     
@@ -91,3 +91,24 @@
 
 </div>
 
+<script>
+$(function(){
+ var str = '<%= @article.title %>';
+  var split = str.split("");
+
+  var counter=0;
+  setInterval(function(){
+    $('.blos').append(split[counter]);
+    counter++;
+    if(counter==str.length){
+      clearInterval
+    }
+  }, 150);
+
+  setTimeout(function(){
+    $('.blos').addClass('style_blos');
+  }, 3000);
+});
+ 
+
+</script>

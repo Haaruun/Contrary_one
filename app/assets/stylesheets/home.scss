@@ -1,165 +1,85 @@
-.main .home_contain{
-overflow-y: scroll;
-height: 100vh;
+.home_contain{
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: wrap;
 }
+
+.home_contain > div{
+    flex: 1;
+    min-width: 50%;
+    width: 50%;
+    min-height: 50vh;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: 1s ease all;
+    -webkit-filter: grayscale(100%);
+}
+
 .essay{
-    flex: 1;
-    width: 600px;
-    min-width: 550px;
+    order: 1;
     background-image: url('https://images.unsplash.com/photo-1429051781835-9f2c0a9df6e4?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1300');
-    height: 100%;
-    -webkit-filter: grayscale(100%);
-    transition: 0.5s ease all;
-    animation: up 1s; 
-    position: relative;
-        background-size: cover;
-
+    background-size: cover;
 }
-
-.essay h3{
-    margin: 0 auto;
-    width: 35%;
-    color: #B71C1C;
-    font-size: 2.6em;
-    background: black;
-    position: relative;
-    top: 200px;
-    text-align: center;
-}
-
-.essay:hover{
--webkit-filter: grayscale(0%);
-transition: 0.5s ease all; 
-}
-
-
-.economics{
-    flex: 1;
-    width: 600px;
-        min-width: 550px;
-    background-image: url('https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1275');
-    height: 100%;
-    -webkit-filter: grayscale(100%);
-    transition: 0.5s ease all;
-        animation: upp 1s; 
-    position: relative;
-        background-size: cover;
-
-
-}
-
-.economics h3{
-    margin: 0 auto;
-    width: 55%;
-    color: #B71C1C;
-    font-size: 2.6em;
-    background: black;
-    position: relative;
-    top: 200px;
-    text-align: center;
-}
-
-.economics:hover{
--webkit-filter: grayscale(0%);
-transition: 0.5s ease all; 
-}
-
 
 .politics{
-   flex: 1;
-    width: 600px;
-    min-width: 550px;
+    order: 2;
     background-image: url('https://images.unsplash.com/13/unsplash_5243a2eb2bc02_1.JPG?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1300');
-    height: 100%;
-    -webkit-filter: grayscale(100%);
-    transition: 0.5s ease all;
-background-position: 30% 20%; 
     background-size: cover;
-       animation: uppp 1s; 
-    position: relative;
+        transition: 1s ease all;
+
+
 }
 
-.politics h3{
-    margin: 0 auto;
-    width: 55%;
-    color: #B71C1C;
-    font-size: 2.6em;
-    background: black;
-    position: relative;
-    top: 200px;
-    text-align: center;
-}
-
-.politics:hover{
--webkit-filter: grayscale(0%);
-transition: 0.5s ease all; 
+.economics{
+    order: 4;
+    background-image: url('https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1275');
+    background-size: cover;
 }
 
 .multimedia{
-     flex: 1;
-    width: 600px;
-    min-width: 550px;
+    order: 3;
     background-image: url('https://images.unsplash.com/photo-1429051883746-afd9d56fbdaf?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1300');
-    height: 100%;
-    -webkit-filter: grayscale(100%);
-    transition: 0.5s ease all;
-background-position: 30% 20%; 
     background-size: cover;
-       animation: ups 1s; 
-    position: relative;   
 }
 
-.multimedia h3{
+.home_contain > div > h3{
+    color: white;
+    background-color: #D32F2F;
     margin: 0 auto;
-    width: 55%;
-    color: #B71C1C;
-    font-size: 2.6em;
-    background: black;
-    position: relative;
-    top: 200px;
+    width: 30%;
+    padding: 20px;
+    font-size: 2em;
+    overflow: hidden;
+    transition: 0.8s ease all;
     text-align: center;
+    transform: translateY(50%);
+            text-shadow: 0px 0px #B71C1C, 1px 1px #B71C1C, 2px 2px #B71C1C, 3px 3px #B71C1C, 4px 4px #B71C1C, 5px 5px #B71C1C, 6px 6px #B71C1C, 7px 7px #B71C1C, 8px 8px #B71C1C, 9px 9px #B71C1C, 10px 10px #B71C1C, 11px 11px #B71C1C, 12px 12px #B71C1C, 13px 13px #B71C1C, 14px 14px #B71C1C, 15px 15px #B71C1C, 16px 16px #B71C1C, 17px 17px #B71C1C, 18px 18px #B71C1C, 19px 19px #B71C1C, 20px 20px #B71C1C, 21px 21px #B71C1C, 22px 22px #B71C1C, 23px 23px #B71C1C, 24px 24px #B71C1C, 25px 25px #B71C1C, 26px 26px #B71C1C, 27px 27px #B71C1C, 28px 28px #B71C1C, 29px 29px #B71C1C, 30px 30px #B71C1C, 31px 31px #B71C1C, 32px 32px #B71C1C, 33px 33px #B71C1C, 34px 34px #B71C1C, 35px 35px #B71C1C, 36px 36px #B71C1C, 37px 37px #B71C1C, 38px 38px #B71C1C, 39px 39px #B71C1C, 40px 40px #B71C1C, 41px 41px #B71C1C, 42px 42px #B71C1C, 43px 43px #B71C1C, 44px 44px #B71C1C, 45px 45px #B71C1C, 46px 46px #B71C1C, 47px 47px #B71C1C, 48px 48px #B71C1C, 49px 49px #B71C1C, 50px 50px #B71C1C, 51px 51px #B71C1C, 52px 52px #B71C1C, 53px 53px #B71C1C, 54px 54px #B71C1C, 55px 55px #B71C1C, 56px 56px #B71C1C, 57px 57px #B71C1C, 58px 58px #B71C1C, 59px 59px #B71C1C, 60px 60px #B71C1C, 61px 61px #B71C1C, 62px 62px #B71C1C, 63px 63px #B71C1C, 64px 64px #B71C1C, 65px 65px #B71C1C, 66px 66px #B71C1C, 67px 67px #B71C1C, 68px 68px #B71C1C, 69px 69px #B71C1C, 70px 70px #B71C1C, 71px 71px #B71C1C, 72px 72px #B71C1C, 73px 73px #B71C1C, 74px 74px #B71C1C, 75px 75px #B71C1C, 76px 76px #B71C1C, 77px 77px #B71C1C, 78px 78px #B71C1C, 79px 79px #B71C1C, 80px 80px #B71C1C, 81px 81px #B71C1C, 82px 82px #B71C1C, 83px 83px #B71C1C, 84px 84px #B71C1C, 85px 85px #B71C1C, 86px 86px #B71C1C, 87px 87px #B71C1C, 88px 88px #B71C1C, 89px 89px #B71C1C, 90px 90px #B71C1C, 91px 91px #B71C1C, 92px 92px #B71C1C, 93px 93px #B71C1C, 94px 94px #B71C1C, 95px 95px #B71C1C, 96px 96px #B71C1C, 97px 97px #B71C1C, 98px 98px #B71C1C, 99px 99px #B71C1C, 100px 100px #B71C1C, 101px 101px #B71C1C, 102px 102px #B71C1C, 103px 103px #B71C1C, 104px 104px #B71C1C, 105px 105px #B71C1C, 106px 106px #B71C1C, 107px 107px #B71C1C, 108px 108px #B71C1C, 109px 109px #B71C1C, 110px 110px #B71C1C, 111px 111px #B71C1C, 112px 112px #B71C1C, 113px 113px #B71C1C, 114px 114px #B71C1C, 115px 115px #B71C1C, 116px 116px #B71C1C, 117px 117px #B71C1C, 118px 118px #B71C1C, 119px 119px #B71C1C, 120px 120px #B71C1C, 121px 121px #B71C1C, 122px 122px #B71C1C, 123px 123px #B71C1C, 124px 124px #B71C1C, 125px 125px #B71C1C, 126px 126px #B71C1C, 127px 127px #B71C1C, 128px 128px #B71C1C, 129px 129px #B71C1C, 130px 130px #B71C1C, 131px 131px #B71C1C, 132px 132px #B71C1C, 133px 133px #B71C1C, 134px 134px #B71C1C, 135px 135px #B71C1C, 136px 136px #B71C1C, 137px 137px #B71C1C, 138px 138px #B71C1C, 139px 139px #B71C1C, 140px 140px #B71C1C, 141px 141px #B71C1C, 142px 142px #B71C1C, 143px 143px #B71C1C, 144px 144px #B71C1C, 145px 145px #B71C1C, 146px 146px #B71C1C, 147px 147px #B71C1C, 148px 148px #B71C1C, 149px 149px #B71C1C, 150px 150px #B71C1C, 151px 151px #B71C1C, 152px 152px #B71C1C, 153px 153px #B71C1C, 154px 154px #B71C1C, 155px 155px #B71C1C, 156px 156px #B71C1C, 157px 157px #B71C1C, 158px 158px #B71C1C, 159px 159px #B71C1C, 160px 160px #B71C1C, 161px 161px #B71C1C, 162px 162px #B71C1C, 163px 163px #B71C1C, 164px 164px #B71C1C, 165px 165px #B71C1C, 166px 166px #B71C1C, 167px 167px #B71C1C, 168px 168px #B71C1C, 169px 169px #B71C1C, 170px 170px #B71C1C, 171px 171px #B71C1C, 172px 172px #B71C1C, 173px 173px #B71C1C, 174px 174px #B71C1C, 175px 175px #B71C1C, 176px 176px #B71C1C, 177px 177px #B71C1C, 178px 178px #B71C1C, 179px 179px #B71C1C, 180px 180px #B71C1C, 181px 181px #B71C1C, 182px 182px #B71C1C, 183px 183px #B71C1C, 184px 184px #B71C1C, 185px 185px #B71C1C, 186px 186px #B71C1C, 187px 187px #B71C1C, 188px 188px #B71C1C, 189px 189px #B71C1C, 190px 190px #B71C1C, 191px 191px #B71C1C, 192px 192px #B71C1C, 193px 193px #B71C1C, 194px 194px #B71C1C, 195px 195px #B71C1C, 196px 196px #B71C1C, 197px 197px #B71C1C, 198px 198px #B71C1C, 199px 199px #B71C1C, 200px 200px #B71C1C; 
 }
 
-.multimedia:hover{
--webkit-filter: grayscale(0%);
-transition: 0.5s ease all; 
+.home_contain >div:hover h3{
+        transform: translateY(150%);
+        transition: 0.2s ease all;
 }
 
-@-webkit-keyframes up {
-    from {top: 1500px;}
-    to {top: 0px;}
-}
-@-webkit-keyframes upp {
-    from {top: 3500px;}
-    to {top: 0px;}
-}
-@-webkit-keyframes uppp {
-    from {top: 5500px;}
-    to {top: 0px;}
-}
-@-webkit-keyframes ups {
-    from {top: 7500px;}
-    to {top: 0px;}
-}
-@-webkit-keyframes left {
-    from {left: -500px;}
-    to {left: 0px;}
-}
-
-.essay h3 img{
- height: 50px;
- width: 40px;
+.home_contain >div:hover{
+      -webkit-filter: grayscale(0%);
 
 }
 
-.economics h3 img{
- height: 55px;
- width: 60px;
+@media screen and (max-width: 1000px) {
+    .home_contain > div{
+    min-width: 100%;
+    width: 100%;
+    transition: 1s ease all;
+
+}
+.home_contain > div > h3{
+        font-size: 1.4em;
+
 }
 
-.politics h3 img{
- height: 60px;
- width: 50px;
- display: block;
- margin: 0 auto;
 }
